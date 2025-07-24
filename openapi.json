@@ -1,6 +1,9 @@
 {
   "openapi": "3.0.1",
   "info": { "title": "ZIP Descompresor", "version": "1.0" },
+  "servers": [
+    { "url": "https://zip-decompressor.zip-decompressor.workers.dev" }
+  ],
   "paths": {
     "/": {
       "post": {
@@ -13,8 +16,7 @@
                 "properties": {
                   "file": {
                     "type": "string",
-                    "format": "binary",
-                    "description": "Archivo ZIP"
+                    "format": "binary"
                   }
                 },
                 "required": ["file"]
