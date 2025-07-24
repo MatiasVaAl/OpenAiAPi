@@ -1,12 +1,18 @@
 {
-  "openapi": "3.0.1",
-  "info": { "title": "ZIP Descompresor", "version": "1.0" },
+  "openapi": "3.1.0",
+  "info": {
+    "title": "ZIP Descompresor",
+    "version": "1.0"
+  },
   "servers": [
-    { "url": "https://zip-decompressor.zip-decompressor.workers.dev" }
+    {
+      "url": "https://zip-decompressor.zip-decompressor.workers.dev"
+    }
   ],
   "paths": {
     "/": {
       "post": {
+        "operationId": "decompressZip",
         "summary": "Descomprime un ZIP",
         "requestBody": {
           "content": {
@@ -14,10 +20,7 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "file": {
-                    "type": "string",
-                    "format": "binary"
-                  }
+                  "file": { "type": "string", "format": "binary" }
                 },
                 "required": ["file"]
               }
