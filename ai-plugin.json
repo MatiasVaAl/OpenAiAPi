@@ -1,0 +1,13 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "ZIP Descompresor",
+  "name_for_model": "zip_descompressor",
+  "description_for_human": "Descomprime archivos ZIP y muestra su contenido.",
+  "description_for_model": "Llama a esta API para recibir un ZIP y devolver filenames y contenido.",
+  "auth": { "type": "none" },
+  "api": {
+    "type": "openapi",
+    "url": "https://zip-decompressor.zip-decompressor.workers.dev/openapi.json",
+    "is_user_authenticated": false
+  }
+}
